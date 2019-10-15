@@ -1,0 +1,31 @@
+{
+  "name": "team_singapore",
+  "version": "1.0.0",
+  "description": "Life sports",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisgaleas-clockwork/Team_Singapore.git"
+  },
+  "author": "Luis galeas, Walter Marikwa, Braxton Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisgaleas-clockwork/Team_Singapore/issues"
+  },
+  "homepage": "https://github.com/luisgaleas-clockwork/Team_Singapore#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "concurrently": "^5.0.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-router": "0.0.1",
+    "mocha": "^6.2.1",
+    "mongodb": "^3.3.2",
+    "nodemon": "^1.19.3",
+    "request": "^2.88.0"
+  }
+}
