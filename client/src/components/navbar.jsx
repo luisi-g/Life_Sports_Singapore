@@ -21,7 +21,7 @@ class Navbar extends React.Component {
         <div id="menu" className="sidemenu">
           <a className="closebtn" onClick={this.closeFunction}>&times;</a>
           <div className="logo">
-          <a href="https://lifesports.org"><img width="250" height="36" src="https://lifesports.org/wp-content/uploads/cropped-life-sports-logo-final-250x43.png"></img></a>
+          <a href="https://lifesports.org"><img width="250" height="36" src="https://lifesports.org/wp-content/uploads/cropped-lifesports-logo-final-white.png"></img></a>
           </div>
           <NavLink className="nav-link" exact={true} activeClassName="active" to="/" onClick={this.closeFunction}>Student Logs<span className="sr-only">(current)</span></NavLink>
           <NavLink className="nav-link" activeClassName="active" to="/create" onClick={this.closeFunction}>Excercise Form</NavLink>

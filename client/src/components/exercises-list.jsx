@@ -53,7 +53,7 @@ export default class ExercisesList extends Component {
       <div>
         <h3>Logged Exercises</h3>
         <table className="table">
-          <thead className="thead-light">
+          <thead className="thead-dark ">
             <tr>
               <th>Username</th>
               <th>Description</th>

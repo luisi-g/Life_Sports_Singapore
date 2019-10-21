@@ -1,7 +1,7 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css"
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navbar from "./components/navbar"
 import ExercisesList from "./components/exercises-list";
@@ -12,12 +12,14 @@ import CreateUser from "./components/create-user";
 function App() {
   return (
     <Router>
-      <Navbar />
-      <div className="main-container">
-      <Route path="/" exact component={ExercisesList} />
-      <Route path="/edit/:id" component={EditExercise} />
-      <Route path="/create" component={CreateExercise} />
-      <Route path="/user" component={CreateUser} />
+      <div className="main-flex-container">
+        <Navbar />
+        <div className="main-container">
+          <Route path="/" exact component={ExercisesList} />
+          <Route path="/edit/:id" component={EditExercise} />
+          <Route path="/create" component={CreateExercise} />
+          <Route path="/user" component={CreateUser} />
+        </div>
       </div>
     </Router>
   );
