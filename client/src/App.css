@@ -170,3 +170,29 @@
     margin: 5vh 0px;
   }
 }
+
+/* Exercise-Form*/
+.exercise-container {
+  background-color: rgba(68, 68, 68, 0.747);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.border_bottom {
+  border-bottom: 3px solid white;
+  color: white;
+}
+
+.form-btn {
+  text-align: center;
+}
+
+.form-date {
+  width:fit-content;
+  border-radius: 5px;
+}
+.form-date label{
+  margin-right:3vw;
+}

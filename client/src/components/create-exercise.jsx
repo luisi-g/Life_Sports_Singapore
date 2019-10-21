@@ -82,14 +82,16 @@ export default class CreateExercise extends Component {
 
   render() {
     return (
-    <div>
-      <h3>Create New Exercise Log</h3>
+    <div className="exercise-container"> 
+    {/* Adding background-color */}
+      <h3 className="border_bottom">Create New Exercise Log</h3>  
+      {/* Adding border bottom */}
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 
-          <label>Username: </label>
           <select ref="userInput"
               required
               className="form-control"
+              placeholder="Username..." // Adding placeholder
               value={this.state.username}
               onChange={this.onChangeUsername}>
               {
@@ -103,10 +105,10 @@ export default class CreateExercise extends Component {
           </select>
         </div>
         <div className="form-group"> 
-          <label>Description: </label>
           <input  type="text"
               required
               className="form-control"
+              placeholder="Description" // Addding a placeholder
               value={this.state.description}
               onChange={this.onChangeDescription}
               />
@@ -120,8 +122,9 @@ export default class CreateExercise extends Component {
               onChange={this.onChangeDuration}
               />
         </div>
-        <div className="form-group">
-          <label>Date: </label>
+        <div className="form-date"> 
+        {/* Adding styles to date */}
+          <label>Date</label>
           <div>
             <DatePicker
               selected={this.state.date}
@@ -130,7 +133,8 @@ export default class CreateExercise extends Component {
           </div>
         </div>
 
-        <div className="form-group">
+        <div className="form-btn">
+          {/* Adding styles to button */}
           <input type="submit" value="Create Exercise Log" className="btn btn-primary" />
         </div>
       </form>
