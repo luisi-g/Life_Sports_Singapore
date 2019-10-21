@@ -25,6 +25,7 @@
     "express-router": "0.0.1",
     "mocha": "^6.2.1",
     "mongodb": "^3.3.2",
+    "morgan": "^1.9.1",
     "nodemon": "^1.19.3",
     "request": "^2.88.0"
   }
