@@ -43,7 +43,7 @@
     overflow-x: hidden;
     transition: all 0.5s;
     font-size: 25px;
-    color:white;
+    color: white;
   }
 
   .sidemenu a {
@@ -88,25 +88,29 @@
 /*======================================*/
 /*               Desktop                */
 /*======================================*/
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 800px) {
+  .main-flex-container {
+    display: flex;
+    height: 100vh;
+    background: #dbdbdb;
+  }
   .sidemenu {
     position: relative;
     overflow-x: hidden;
     width: 100%;
-    background-color: whitesmoke;
-    display: flex;
-    padding: 5px 0;
+    background-color: #222;
+    /* display: flex; */
     font-size: 1.5em;
     justify-content: flex-start;
-    margin: auto;
   }
   .sidemenu a {
     padding: 10px 20px;
     font-size: 0.8em;
-    color: black;
+    color: #dbdbdb;
+    width: fit-content;
   }
   .sidemenu a:hover {
-    color: #222;
+    color: #dbdbdb;
   }
 
   #mainbox {
@@ -122,40 +126,47 @@
   .closebtn {
     visibility: hidden;
   }
-
+  .nav-link {
+    margin-left: 2vw;
+  }
   .nav-link::after {
     content: "";
     display: block;
     height: 2px;
     width: 0;
-    background-color: black;
+    background-color: #dbdbdb;
+    border-radius: 5px;
     transition: width 500ms ease;
   }
-
   .nav-link:hover::after {
     width: 100%;
   }
 
   .active::after {
     content: "";
+    border-radius: 5px;
     display: block;
     height: 2px;
     width: 100%;
-    background-color: black;
+    background-color: #dbdbdb;
   }
 
   .active {
     transition: 1s;
   }
-}
+  .logo {
+    margin-bottom: 5vh;
+  }
 
-/* ============================================== */
-/* ================   Body  ===================== */
-/* ============================================== */
-@media only screen and (min-width: 1400px) {
+  /* ============================================== */
+  /* ================   Body  ===================== */
+  /* ============================================== */
   .main-container {
-    width:90%;
-    margin:auto;
+    width: 70%;
+    margin: auto;
     margin-top: 5vh;
+  }
+  .main-container h3 {
+    margin: 5vh 0px;
   }
 }
