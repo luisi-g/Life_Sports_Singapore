@@ -1,22 +1,172 @@
-.App {
-  text-align: center;
+/* ============================================== */
+/* =============     NAVBAR     ================= */
+/* ============================================== */
+
+/* ============================================== */
+/* =============   Iphone 5se   ================= */
+/* ============================================== */
+@media only screen and (min-width: 320px) {
+  body {
+    font-family: sans-serif;
+  }
+
+  #mainbox {
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.6s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    background: #f4fffd;
+    padding: 3px;
+  }
+
+  .mainbox__show {
+    margin-left: 300px;
+    display: none;
+  }
+
+  .menu__show {
+    width: 300px !important;
+  }
+
+  .sidemenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #2a306e;
+    z-index: 10;
+    padding-top: 50px;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    font-size: 25px;
+    color: white;
+  }
+
+  .sidemenu a {
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    color: #f2f2f2;
+    cursor: pointer;
+    display: block;
+  }
+
+  .sidemenu a:hover {
+    color: white;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+  }
 }
 
-.App-logo {
-  height: 40vmin;
-}
+/* ============================================== */
+/* =================   Ipad   =================== */
+/* ============================================== */
+@media only screen and (min-width: 768px) {
+  #mainbox {
+    font-size: 50px;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .sidemenu {
+    font-size: 60px;
+  }
 
-.App-link {
-  color: #09d3ac;
+  .sidemenu a {
+    padding: 10px 10px 10px 64px;
+  }
+
+  .menu__show {
+    width: 500px !important;
+  }
+}
+/*======================================*/
+/*               Desktop                */
+/*======================================*/
+@media only screen and (min-width: 800px) {
+  .main-flex-container {
+    display: flex;
+    height: 100vh;
+    background: #dbdbdb;
+  }
+  .sidemenu {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #222;
+    /* display: flex; */
+    font-size: 1.5em;
+    justify-content: flex-start;
+  }
+  .sidemenu a {
+    padding: 10px 20px;
+    font-size: 0.8em;
+    color: #dbdbdb;
+    width: fit-content;
+  }
+  .sidemenu a:hover {
+    color: #dbdbdb;
+  }
+
+  #mainbox {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    top: 0;
+    z-index: 2;
+  }
+
+  .closebtn {
+    visibility: hidden;
+  }
+  .nav-link {
+    margin-left: 2vw;
+  }
+  .nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+    transition: width 500ms ease;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .active::after {
+    content: "";
+    border-radius: 5px;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #dbdbdb;
+  }
+
+  .active {
+    transition: 1s;
+  }
+  .logo {
+    margin-bottom: 5vh;
+  }
+
+  /* ============================================== */
+  /* ================   Body  ===================== */
+  /* ============================================== */
+  .main-container {
+    width: 70%;
+    margin: auto;
+    margin-top: 5vh;
+  }
+  .main-container h3 {
+    margin: 5vh 0px;
+  }
 }

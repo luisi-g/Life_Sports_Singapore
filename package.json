@@ -1,32 +1,32 @@
 {
-  "name": "team_singapore",
+  "name": "lifesports",
   "version": "1.0.0",
-  "description": "Life sports",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node index.js",
+    "start:dev": "concurrently \"nodemon server.js --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luisgaleas-clockwork/Team_Singapore.git"
-  },
-  "author": "Luis galeas, Walter Marikwa, Braxton Jackson",
+  "keywords": [],
+  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/luisgaleas-clockwork/Team_Singapore/issues"
-  },
-  "homepage": "https://github.com/luisgaleas-clockwork/Team_Singapore#readme",
+  "devDependencies": {},
   "dependencies": {
-    "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
-    "concurrently": "^5.0.0",
-    "dotenv": "^8.1.0",
-    "express": "^4.17.1",
-    "express-router": "0.0.1",
-    "mocha": "^6.2.1",
-    "mongodb": "^3.3.2",
+    "concurrently": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.5.7",
     "morgan": "^1.9.1",
-    "nodemon": "^1.19.3",
-    "request": "^2.88.0"
+    "nodemon": "^1.18.7",
+    "sass": "^1.23.0"
+  },
+  "engines": {
+    "node": "10.16.0"
   }
 }
