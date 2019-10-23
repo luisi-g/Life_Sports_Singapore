@@ -89,10 +89,15 @@
 /*               Desktop                */
 /*======================================*/
 @media only screen and (min-width: 800px) {
+  table{
+    background-color: #dbdbdb;
+  }
   .main-flex-container {
     display: flex;
     height: 100vh;
-    background: #dbdbdb;
+    background-image: url(https://images.unsplash.com/photo-1525876902033-8da51fbe1e59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    background-repeat: no-repeat;
+    background-size:cover;
   }
   .sidemenu {
     position: relative;
@@ -168,5 +173,9 @@
   }
   .main-container h3 {
     margin: 5vh 0px;
+    color:whitesmoke;
   }
+  /* ============================================== */
+  /* ================   Users  ===================== */
+  /* ============================================== */
 }

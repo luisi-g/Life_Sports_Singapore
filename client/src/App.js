@@ -18,7 +18,9 @@ function App() {
           <Route path="/" exact component={ExercisesList} />
           <Route path="/edit/:id" component={EditExercise} />
           <Route path="/create" component={CreateExercise} />
-          <Route path="/user" component={CreateUser} />
+          <div className="user-bg">
+            <Route path="/user" component={CreateUser} />
+          </div>
         </div>
       </div>
     </Router>
