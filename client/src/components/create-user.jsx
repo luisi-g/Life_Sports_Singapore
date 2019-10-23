@@ -38,7 +38,7 @@ export default class CreateUser extends Component {
 
   render() {
     return (
-      <div>
+      <div className="user animated bounceInUp">
         <h3>Create New User</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group"> 

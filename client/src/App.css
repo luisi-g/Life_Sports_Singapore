@@ -175,6 +175,19 @@
     margin: 5vh 0px;
     color:whitesmoke;
   }
+  .list, .user{
+    background-color: rgba(68, 68, 68, 0.747);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 40px;
+    border-radius: 5px;
+    margin-top:15vh;
+    color: white;
+  }
+  .user{
+    width:70%;
+    margin:auto;
+    margin-top:18vh;
+  }
   /* ============================================== */
   /* ================   Users  ===================== */
   /* ============================================== */
@@ -184,9 +197,15 @@
 .exercise-container {
   background-color: rgba(68, 68, 68, 0.747);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  padding: 10px;
+  padding: 40px;
   border-radius: 5px;
   color: white;
+  width:70%;
+  margin:auto;
+  margin-top:15vh;
+}
+.btn{
+  margin-top:4vh;
 }
 
 .border_bottom {

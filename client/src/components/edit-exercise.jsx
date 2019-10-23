@@ -94,7 +94,7 @@ export default class EditExercise extends Component {
 
   render() {
     return (
-    <div>
+    <div className="animated bounceInUp">
       <h3>Edit Exercise Log</h3>
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 

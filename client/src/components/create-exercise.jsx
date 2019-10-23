@@ -82,7 +82,7 @@ export default class CreateExercise extends Component {
 
   render() {
     return (
-    <div className="exercise-container"> 
+    <div className="exercise-container animated bounceInUp"> 
     {/* Adding background-color */}
       <h3 className="border_bottom">Create New Exercise Log</h3>  
       {/* Adding border bottom */}

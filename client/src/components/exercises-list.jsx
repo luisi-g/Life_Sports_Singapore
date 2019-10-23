@@ -50,7 +50,7 @@ export default class ExercisesList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="list animated bounceInUp">
         <h3>Logged Exercises</h3>
         <table className="table">
           <thead className="thead-dark ">
