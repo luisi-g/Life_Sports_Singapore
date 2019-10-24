@@ -30,5 +30,11 @@ router.post('/add', ({ body }, res) => {
         .catch(err => res.send(err))
 })
 
+router.get('/name/:name', (req, res) => {
+    const nameLike = `${req.parms.username}`
+    User.find({ contains: { "username": nameLike } })
+        .then(dbUser => res.json(dbUser))
+        .catch(err => res.send(err))
+})
 
 module.exports = router;

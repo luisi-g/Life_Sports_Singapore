@@ -1,0 +1,11 @@
+/Users/braxtonjackson/Documents/Life_Sports_Singapore/myApp/bin/Debug/netcoreapp3.0/myApp
+/Users/braxtonjackson/Documents/Life_Sports_Singapore/myApp/bin/Debug/netcoreapp3.0/myApp.deps.json
+/Users/braxtonjackson/Documents/Life_Sports_Singapore/myApp/bin/Debug/netcoreapp3.0/myApp.runtimeconfig.json
+/Users/braxtonjackson/Documents/Life_Sports_Singapore/myApp/bin/Debug/netcoreapp3.0/myApp.runtimeconfig.dev.json
+/Users/braxtonjackson/Documents/Life_Sports_Singapore/myApp/bin/Debug/netcoreapp3.0/myApp.dll
+/Users/braxtonjackson/Documents/Life_Sports_Singapore/myApp/bin/Debug/netcoreapp3.0/myApp.pdb
+/Users/braxtonjackson/Documents/Life_Sports_Singapore/myApp/obj/Debug/netcoreapp3.0/myApp.csprojAssemblyReference.cache
+/Users/braxtonjackson/Documents/Life_Sports_Singapore/myApp/obj/Debug/netcoreapp3.0/myApp.AssemblyInfoInputs.cache
+/Users/braxtonjackson/Documents/Life_Sports_Singapore/myApp/obj/Debug/netcoreapp3.0/myApp.AssemblyInfo.cs
+/Users/braxtonjackson/Documents/Life_Sports_Singapore/myApp/obj/Debug/netcoreapp3.0/myApp.dll
+/Users/braxtonjackson/Documents/Life_Sports_Singapore/myApp/obj/Debug/netcoreapp3.0/myApp.pdb
